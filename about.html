@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Commerce | About Us</title>
+
+        <link rel="Stylesheet" type="text/css" href="style.css">
+        
+        <script src="https://kit.fontawesome.com/055d8f5952.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="nav_top">
+            <div class="logo">
+                <a href="#"><img src="./Images/Logo.png" width="150px"></a>
+            </div>
+            <div class="nav_side">
+                <a href="index.html">Home</a>
+                 <a href="about.html">About Us</a>
+                 <a href="service.html">Services</a>
+                 <a href="blog.html">Blogs</a>
+                 <a href="contact.html">Contact</a>
+                 <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+
+        <div class="about_us">
+            <h2>About Us</h2>
+            <div class="about_content">
+                <p>If there’s one thing we’ve learnt over the past 75+ years, it’s that a better home creates a better life.
+                   So we work to create better homes, every day, through the products and solutions we offer.
+                   Our vision is to create a better everyday life for the many people.
+                   On this site you can discover exactly what this means and find out who we are, what we do and what we stand for.
+                   Every year since 2014 we’ve been connecting with people around the world to create our Life at Home Report.
+                   So far, we’ve spoken to 105 738 of them.Finding the smartest, most innovative, cost-efficient way of doing things is part of our DNA. 
+                   We’ve always gone our own way, knowing that you can’t blaze a trail by walking the same path as everyone else.</p>
+            </div>
+
+            <hr>
+
+            <h2>Our Mission</h2>
+            <p>We believe that the best things are those we create together. Through co-creation, we invite you to share your ideas and feedback with us.
+                To create better homes, we need to know the challenges people are facing in their everyday lives.
+                The world is changing, faster than ever before, and so are people’s needs and dreams.
+                Want to know more about our product development process?
+                Welcome backstage and meet our designers and get a sneak peek at sketches, prototypes, and snapshots from the factory floor.
+                We are on an exciting journey of making more from less – designing all of our products to be 100% circular,
+                and aiming to use only renewable or recycled materials by 2030.</p>
+
+                <hr>
+
+                <h2>Sustainability – caring for people and the planet</h2>
+                <p>To meet the challenges of unsustainable consumption, climate change, and growing inequality,
+                   we are – in collaboration with partners, co-workers, and customers – taking ambitious steps towards a more sustainable future.
+                   Our ambition is to become a climate positive business by 2030. To get there, we are shifting to a circular business model.
+                   This means using more renewable and recycled materials, striving to eliminate waste in our operations and changing the way we design products.
+                   We are also committed to regenerating resources, protecting ecosystems and improving biodiversity.
+                   our company's value chain touches millions of people around the world. We are committed to respecting and supporting human rights throughout our value chain, championing the rights of children, decent work, and inclusive workplaces.
+                   We also create positive impact together with social entrepreneurs.</p>
+        </div>
+
+        <div class="feed">
+            <h2>Write a review</h2>
+            
+			<p>We value your voice! Share your thoughts and help us improve. Your feedback shapes our future and helps us serve you better.</p>
+            <div class="feed_form">
+                <form name="submit_googlesheet" method="post">
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Email" placeholder="Email ID"><br>
+                    <input type="tel" name="Contact" placeholder="Contact Number" autocomplete="off"><br>
+                    <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="footer_logo">
+                <a href="#"><img src="./Images/Logo.png" width="150px"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="About.html">About Us</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="login.html">Login</a>|
+                <a href="login.html">Sign Up</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/pg/1Stopai-102490171820303/posts/"target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://in.linkedin.com/company/1stop-ai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send/phone=+9198768757436" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="tel: +917686475768"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: support@1stop.ai"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 All rights reserved</p>
+        </footer>
+         
+<script type="text/javascript">
+    const scriptURL ='https://script.google.com/macros/s/AKfycbym3_bfpoBP7NDBOKb7ONPhzBO52idn3Hb6T9UkGc-HBY29jTQIUpfsNGO3wUJxDV8LcA/exec'
+
+     const form = document.forms['submit_googlesheet']
+
+     form.addEventListener('submit', e => {
+       e.preventDefault()
+       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+           .then(response => alert("Thanks for you valuable feedback!!!"))
+           .catch(error => console.error('Error!', error.message))
+   })
+
+</script>
+</body>
+</html>
